@@ -7,7 +7,7 @@ function getData() {
         const result = JSON.parse(xhr.responseText);
         const div = document.getElementById("pikachu");
         div.innerHTML = ` <figure style="background-color: #E7C859; border-radius: 10px; border: 3px solid #D0B34A; margin:80px auto; display: block; width: 300px; height:400px; text-align: center; color: white; display: block;">
-        <figcaption>${result.id}: ${result.name}</figcaption>
+        <figcaption style="margin-top: 30px">${result.id}: ${result.name}</figcaption>
         <img src="${result.sprites["front_default"]}" alt="ini gambar" style="display: block; margin: auto;" width="300" height="300">
         <figcaption>type: ${result.types[0].type.name}</figcaption>
     </figure>`
